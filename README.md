@@ -38,6 +38,7 @@ https://phpunit.de/getting-started/phpunit-7.html
 4、写测试类、被测试类
 被测试的类
 src/Email.php
+```
 <?php
 declare(strict_types=1);
 
@@ -74,10 +75,11 @@ final class Email
         }
     }
 }
-
+```
 测试的类
 tests/EmailTest.php
 ========demo==========
+```
 <?php
 declare(strict_types=1);
 
@@ -108,11 +110,13 @@ final class EmailTest extends TestCase
         );
     }
 }
+```
 ========demo==========
 
 ========遇到的知识点==========
 安装全局PHPUnit 命令行（https://phpunit.readthedocs.io/en/7.4/installation.html）
-$  wget https://phar.phpunit.de/phpunit-|version|.phar
+  
+  $  wget https://phar.phpunit.de/phpunit-|version|.phar
 $  chmod +x phpunit-|version|.phar
 $  sudo mv phpunit-|version|.phar /usr/local/bin/phpunit
 $  phpunit --version

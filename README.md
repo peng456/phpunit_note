@@ -4,40 +4,40 @@ php  单元测试
 
 单元测试是提高代码质量，查漏补缺的，和平时的代码调试不一样
 
-框架
-1、phpunit/ 
-中文文档
+框架  
+1、phpunit/  
+中文文档  
 https://phpunit.readthedocs.io/zh_CN/latest/
 
-2、ci-phpunit-test/ (An easier way to use PHPUnit with CodeIgniter 3.x. http://kenjis.github.io/ci-phpunit-test/) 
-
-3、VisualPHPUnit  一个可视化的测试工具（没研究）
-http://visualphpunit.github.io/VisualPHPUnit/
+2、ci-phpunit-test/ (An easier way to use PHPUnit with CodeIgniter 3.x. http://kenjis.github.io/ci-phpunit-test/)  
+3、VisualPHPUnit  一个可视化的测试工具（没研究）  
+http://visualphpunit.github.io/VisualPHPUnit/  
 http://visualphpunit.github.io/VisualPHPUnit/api/index.xhtml
 
 
-如何在自己的项目中使用PHPUnit
-Getting Started with PHPUnit
-https://phpunit.de/getting-started-with-phpunit.html
+如何在自己的项目中使用PHPUnit  
+Getting Started with PHPUnit  
+https://phpunit.de/getting-started-with-phpunit.html  
 https://phpunit.de/getting-started/phpunit-7.html
 
 1、composer init
+
 把下面内容加入到 composer.json  中(被测试类的位置)
-==============
+
     "autoload": {
         "classmap": [
             "src/"
         ]
     },
-==============
 
-2、composer require --dev phpunit/phpunit ^7
 
-3、 ./vendor/bin/phpunit --version
+2、composer require --dev phpunit/phpunit ^7  
+
+3、 ./vendor/bin/phpunit --version  
 
 4、写测试类、被测试类
-被测试的类
-src/Email.php
+被测试的类  
+src/Email.php  
 ```
 <?php
 declare(strict_types=1);
@@ -76,7 +76,8 @@ final class Email
     }
 }
 ```
-测试的类
+
+测试的类  
 tests/EmailTest.php
 ========demo==========
 ```
